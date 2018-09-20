@@ -1,59 +1,54 @@
+@import 'partials/vars'
+@import 'partials/board'
+@import 'partials/legend'
+@import 'partials/buttons'
+
 body
+  font-family: $primary-font
+
+header
+  text-align: center
+
+h1
+  color: $background-red
   margin: 0
   padding: 0
+  font:
+    size: 100px
 
-#board
-  height: 600px
-  width: 900px
-  top: 0px
-  left: 0px
-  background-color: #25bf18
-  position: relative
-  float: left
-
-.paddle
-  height: 80px
-  width: 20px
-  position: absolute
-
-#paddle1
-  background-color: #c30c0c
-  top: 250px
-  left: 40px
-
-#paddle2
-  background-color: #0c66c3
-  top: 250px
-  left: 840px
-
-#net
-  height: 100%
-  width: 1px
-  background: black
-  position: relative
-  margin: Auto
-
-#ball
-  height: 20px
-  width: 20px
-  background-color: #fff
-  top: 290px
-  left: 440px
-  position: absolute
-  border-radius: 25px
-
-#leyend
-  margin-left: 950px
-  padding-top: 50px
-
-#start
-  height: 50px
-  width: 150px
-  border: none
-  background-color: orange
-  box-shadow: 1px 1px 1px 1px gray
-  margin-bottom: 30px
-
-.score span
+.leyend
+  background-color: $background-red
+  border: solid 10px black
+    radius: 0 0 10px 10px
+  margin: 0 50%
+  left: -460px
   display: inline-block
-  font-size: 3em
+  position: relative
+  width: 900px
+
+  &__key1
+    display: inline-block
+    margin-left: 210px
+  &__key2
+    display: inline-block
+    margin-right: 60px
+
+  &__score
+    display: inline
+    position: absolute
+    span
+      font-size: 3em
+  &__score1
+    margin-left: 25px
+  &__score2
+    margin-right: 35px
+
+
+
+.start
+  background-color: red
+  color: #fff
+  border: none
+    radius: 4px
+  margin: 0 70px 30px 85px
+  padding: 12px 18px
