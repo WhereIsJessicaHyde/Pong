@@ -1,5 +1,5 @@
 .board {
-  background-color: #25bf18;
+  background-color: #23AC23;
   border: solid 10px black;
     border-radius: 10px 10px 0 0;
   box-shadow: 0 5px 10px gray;
@@ -12,11 +12,11 @@
     position: absolute;
     width: 20px; }
   .board__paddle1 {
-    background-color: #c30c0c;
+    background-color: #800;
     left: 40px;
     top: 250px; }
   .board__paddle2 {
-    background-color: #0067d0;
+    background-color: #800;
     left: 840px;
     top: 250px; }
   .board__net {
@@ -37,40 +37,7 @@
   background-color: rgba(215, 44, 44, 0.8);
   border: solid 10px black;
     border-radius: 0 0 10px 10px;
-  margin: 0 50%;
-  left: -460px;
-  display: inline-block;
-  position: relative;
-  width: 900px; }
-  .leyend__key1 {
-    display: inline-block;
-    margin-left: 30px; }
-  .leyend__key2 {
-    display: inline-block;
-    margin-right: 60px; }
-  .leyend__score {
-    display: inline; }
-    .leyend__score span {
-      font-size: 3em; }
-  .leyend__score1 span {
-    margin: 10px 0 0 20px; }
-
-body {
-  font-family: Montserrat; }
-
-header {
-  text-align: center; }
-
-h1 {
-  color: rgba(215, 44, 44, 0.8);
-  margin: 0;
-  padding: 0;
-  font-size: 100px; }
-
-.leyend {
-  background-color: rgba(215, 44, 44, 0.8);
-  border: solid 10px black;
-    border-radius: 0 0 10px 10px;
+    border-top: none;
   margin: 0 50%;
   left: -460px;
   display: inline-block;
@@ -84,18 +51,31 @@ h1 {
     margin-right: 60px; }
   .leyend__score {
     display: inline;
-    position: absolute; }
+    position: absolute;
+    margin-top: 8px; }
     .leyend__score span {
       font-size: 3em; }
   .leyend__score1 {
-    margin-left: 25px; }
+    margin-left: 35px; }
   .leyend__score2 {
     margin-right: 35px; }
 
 .start {
-  background-color: red;
-  color: #fff;
+  background-color: #fff;
+  color: rgba(215, 44, 44, 0.8);
   border: none;
     border-radius: 4px;
-  margin: 0 70px 30px 85px;
+  margin: 15px 70px 15px 85px;
   padding: 12px 18px; }
+
+body {
+  font-family: Montserrat; }
+
+header {
+  text-align: center; }
+
+h1 {
+  color: rgba(215, 44, 44, 0.8);
+  margin: 0;
+  padding: 0;
+  font-size: 100px; }
